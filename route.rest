@@ -1,0 +1,20 @@
+
+GET http://localhost:3000/employees
+###
+POST  http://127.0.0.1:3000/employees
+Content-Type: application/json
+
+{
+  "lastName": "Doe",
+  "firstName": "John",
+  "department": "HR"
+}
+
+
+GET http://localhost:3000/portfolio_med/65110b243bf130fda2d7d387
+
+GET http://localhost:3000/listingAndReviews/
+
+
+
+
