@@ -1,11 +1,13 @@
-// app.js
+import cors from 'cors';
+import dotenv from 'dotenv';
 const express = require('express');
-const bodyParser = require('body-parser');
 const sequelize = require('./database');
 const Employee = require('./models/Employee');
 
+dotenv.config();
 const app = express();
-app.use(bodyParser.json());
+app.use(express.json());
+app.use(cors({origin:'*'}));
 
 
 // Create an employee
